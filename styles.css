@@ -25,7 +25,7 @@
   
   main {
     margin: 0;
-    padding: 12% 18% 5% 18%;
+    padding: 10% 18% 1% 18%;
     text-align: justify;
   }
 
@@ -73,7 +73,7 @@
   }
 
   
-  form {
+  form, h3 {
     text-align: center
   }
   
@@ -99,14 +99,18 @@
     text-shadow: none;
   }
   
-  #video {
-    display: block;
+  #video-container {
+    display: flex;
+    width: 50%;
+    height: 70%;
     margin-left: auto;
     margin-right: auto;
-    width: 420px;
-    height: 315px;
   }
   
+  #video {
+    flex: 1 1 500px;
+  }
+
   #video-text {
     text-align: center;
   }
@@ -122,17 +126,17 @@
   
   .features-container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    text-align: center;
   }
 
-  .features-container div {
-    margin: 15px;
+  .feature {
+    flex: 1;
+    margin: 20px;
   }
 
-  .features-container img {
-    width: 175px;
-    height: auto;
+  .feature img {
+    width: 95%;
+    max-width: 200px;
   }
   
   .features-container h3, .features-container p {
@@ -154,16 +158,19 @@
   a:hover { text-decoration: none; }
   
   a:active { text-decoration: none; }
-  
+
   .price {
-    display: grid;
-    column-gap: 35px;
-     grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .choco-price {
+    flex: 1;
   }
   
-  
   .choco-price img {
-    width: 180px
+    width: 150px;
   }
   
   .choco-price p {
@@ -186,11 +193,9 @@
       left: 15%;
     }
 
-    .features-container {
-      flex-direction: column;
-    }
-
-    .features-container div img {
-      margin-left: 50px;
+    main {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20% 5% 5% 5%;
     }
   }
