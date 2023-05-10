@@ -160,9 +160,16 @@
   a:active { text-decoration: none; }
 
   .price {
+    flex: 1;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     margin-left: 15px;
+  }
+
+  .choco-container {
+    display: flex;
+    justify-content: center;
   }
 
   .choco-price {
@@ -170,13 +177,13 @@
   }
   
   .choco-price img {
-    width: 150px;
+    max-width: 150px;
   }
   
   .choco-price p {
     font-style: italic;
+    text-align: center;
   }
-  
   
   #main-start {
     margin-top: 40px
